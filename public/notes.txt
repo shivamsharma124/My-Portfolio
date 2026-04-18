@@ -1,7 +1,7 @@
 /**
  * @file: profile.config.ts
- * @author: Engineering Portfolio
- * @summary: A high-performance full-stack engineer.
+ * @author: Shivam Sharma
+ * @summary: A passionate Frontend Developer building clean, responsive web apps.
  */
 
 // --------------------------------------------------
@@ -10,17 +10,18 @@
 
 const TECH_STACK = {
   frontend: [
-    "React.js",    // 100%
-    "TailwindCSS", // 95%
-    "Three.js",    // 70%
+    "React.js",      // 90%
+    "JavaScript",    // 85%
+    "HTML5 & CSS3",  // 95%
+    "Tailwind CSS",  // 80%
   ],
   backend: [
-    "Springboot",     // 90%
-    "MySQL",  // 85%
-    "RestApi",       // 75%
- 
+    "Spring Boot",   // 75%
+    "Node.js",       // 70%
+    "REST APIs",     // 85%
+    "MySQL",         // 75%
   ],
-  tools: ["Tableau", "Git", "Figma", "Linux"]
+  tools: ["Git", "GitHub", "VS Code", "Postman", "Linux"]
 };
 
 // --------------------------------------------------
@@ -28,57 +29,67 @@ const TECH_STACK = {
 // --------------------------------------------------
 
 class ProfessionalHistory {
-  
-  /** * CURRENT ROLE
-   * @period 2023 - Present 
+
+  /**
+   * CURRENT PROJECT
+   * @period 2024 - Present
    */
-  public async TechFlow_Systems(): Promise<Impact> {
-    const role = "Senior Full-Stack Engineer";
-    
-    // Key Achievements
-    const optimized = await api.optimize({ strategy: "Redis Caching" });
-    const latencyReduction = "40%";
-    
-    const leadership = this.mentor(["Jr. Dev 1", "Jr. Dev 2", "Jr. Dev 3"]);
-    const architecture = "Monolith -> Microservices Migration";
-    
-    return { role, optimized, architecture, leadership };
+  public async GrowSome(): Promise<Impact> {
+    const role = "Frontend Developer (Personal Project)";
+
+    const platform = "AI-Powered Entrepreneur Companion";
+    const endpoints = await api.build({ count: "10+ RESTful Endpoints" });
+    const auth = "JWT-based Subscription Access Control";
+
+    const features = [
+      "Interactive Music Player Module",
+      "Responsive UI with React.js + Axios",
+      "Spring Boot Backend Integration",
+    ];
+
+    return { role, platform, auth, features };
   }
 
-  /** * PREVIOUS ROLE
-   * @period 2021 - 2023
+  /**
+   * PREVIOUS PROJECT
+   * @period 2024
    */
-  public PixelPerfect_Studios(): void {
+  public PortfolioWebsite(): void {
     this.role = "Frontend Developer";
-    this.focus = "High-Fidelity Animations";
-    
-    // Implemented GSAP scroll-triggers for 15+ clients
-    // Improved Lighthouse Performance Scores: 65 -> 98
+    this.focus = "iOS-Style Responsive UI";
+
+    // Built macOS-inspired portfolio with React.js
+    // Reusable component architecture throughout
+    // Cross-browser compatibility & performance optimized
   }
 }
 
 // --------------------------------------------------
-// 3. COMPETITIVE ACHIEVEMENTS
+// 3. PROJECTS SHIPPED
 // --------------------------------------------------
 
-interface HackathonWin {
-  rank: number;
-  event: string;
-  project: string;
+interface Project {
+  name: string;
+  stack: string[];
+  highlight: string;
 }
 
-const trophyCabinet: HackathonWin[] = [
+const projects: Project[] = [
   {
-    rank: 1,
-    event: "Global AI Hackathon 2024",
-    project: "EcoVision (Computer Vision Waste Segregation)",
-    // Prize: $5,000
+    name: "GrowSome – AI Business Companion",
+    stack: ["React.js", "Spring Boot", "JWT", "REST APIs", "Axios"],
+    highlight: "10+ endpoints, subscription auth, music player UI",
   },
   {
-    rank: 500, // Top 500 Global
-    event: "Google Code Jam 2023",
-    project: "Algorithm Optimization (Dynamic Programming)",
-  }
+    name: "Portfolio Website – iOS Style UI",
+    stack: ["React.js", "CSS3", "Responsive Design"],
+    highlight: "macOS-inspired UI, reusable components",
+  },
+  {
+    name: "Functional UI Component Library",
+    stack: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "SASS"],
+    highlight: "13+ reusable cross-platform UI components",
+  },
 ];
 
 // --------------------------------------------------
@@ -86,19 +97,8 @@ const trophyCabinet: HackathonWin[] = [
 // --------------------------------------------------
 
 const education = new Map<string, string>([
-  ["Stanford University", "MS Computer Science (3.9 GPA)"],
-  ["MIT World Peace Univ", "B.Tech Information Tech (8.8 CGPA)"]
+  ["Noida Institute of Engineering & Technology", "B.Tech CSE (CGPA: 8.64/10) | 2023–2027"],
+  ["S.D.M. Inter College",                        "Intermediate | 83.33% | 2021"],
 ]);
 
 export default new ProfessionalHistory();
-
-
-```bash
-# TERMINAL OUTPUT
-# ---------------------------------------
-$ user --status
-> Status: Open to Opportunities
-> Location: Global / Remote
-> Loading Assets... [||||||||||] 100%
-> Ready.
-```
