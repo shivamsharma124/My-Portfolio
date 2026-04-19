@@ -19,16 +19,16 @@ const App = () => {
   })
   return (
     <main 
-      className='bg-cover bg-center h-screen w-screen bg-no-repeat overflow-hidden'
-      style={{ backgroundImage: `url("/bg.jpg")` }}>
+      className='fixed top-0 left-0 w-screen h-screen bg-cover bg-center bg-no-repeat overflow-hidden'
+      style={{ backgroundImage: `url("/bg.jpg")`, backgroundAttachment: 'fixed' }}>
         <Nav />
          <Doc window={window} setwindow={setwindow} /> 
-    {window.github &&<Github windowname="github" window={window} setwindow={setwindow}  />}
-   {window.note && <Notes windowname="note" window={window} setwindow={setwindow}/>}
-     {window.spotify && <Spotify windowname="spotify" window={window} setwindow={setwindow}/>}
+    {window.github &&<Github windowname="github" windowState={window} setwindow={setwindow}  />}
+   {window.note && <Notes windowname="note" windowState={window} setwindow={setwindow}/>}
+     {window.spotify && <Spotify windowname="spotify" windowState={window} setwindow={setwindow}/>}
       
-      {window.resume &&   <Resume windowname="resume" window={window} setwindow={setwindow}/>}
-       {window.cli &&  <Cli windowname="cli" window={window} setwindow={setwindow}/>}
+      {window.resume &&   <Resume windowname="resume" windowState={window} setwindow={setwindow}/>}
+       {window.cli &&  <Cli windowname="cli" windowState={window} setwindow={setwindow}/>}
     </main>
   )
 }

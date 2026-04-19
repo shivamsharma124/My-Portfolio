@@ -5,7 +5,7 @@ import { TerminalService } from 'primereact/terminalservice'
 import 'primereact/resources/themes/soho-dark/theme.css'
 import 'primereact/resources/primereact.min.css'
 
-const Cli = ({windowname, window, setwindow}) => {
+const Cli = ({windowname, windowState, setwindow}) => {
   const commandHandler = (text) => {
     const cmd = text.trim().toLowerCase()
     let response
@@ -102,7 +102,7 @@ Type 'help' to see available commands.`
   }, [])
 
   return (
-    <Macwindow windowname={windowname} window={window} setwindow={setwindow}>
+    <Macwindow windowname={windowname} windowState={windowState} setwindow={setwindow}>
       <Terminal
         pt={{
           root: { style: { background: 'transparent', height: '100%' } },
