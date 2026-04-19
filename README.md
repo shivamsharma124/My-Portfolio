@@ -165,9 +165,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 👨‍💻 Author
 
 **Shivam Sharma**
-- LinkedIn: [Your LinkedIn]
-- GitHub: [Your GitHub]
-- Email: [Your Email]
 
 ---
 
